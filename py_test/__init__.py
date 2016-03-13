@@ -35,7 +35,7 @@ def setInterval(interval, times = -1):
 def flipLED():
     GPIO.output("USR3", GPIO.LOW if ledOn else GPIO.HIGH)
     print "Flipped " + ("LOW" if ledOn else "HIGH")
-    ledOn = !ledOn
+    ledOn = not ledOn
 
 stopper = flipLED()
 
